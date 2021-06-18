@@ -2,7 +2,7 @@ def cycleSort(nums: List[int]) -> List[int]:
     index = 0
     while index < len(nums):
         j = nums[index]-1
-        if j != index:
+        if nums[index] != nums[j]:
             nums[index], nums[j] = nums[j], nums[index]
         else:
             index += 1
